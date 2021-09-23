@@ -13,6 +13,10 @@ module.exports = {
             login: "#03c9a9",
             loginHov: "#22d6b8",
           },
+          nav: {
+            text: "#092846",
+            textHov: "#F1890E",
+          }
         }
       },
       height: {
