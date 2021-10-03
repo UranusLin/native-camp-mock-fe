@@ -1,8 +1,9 @@
+import SectionOne from './section/SectionOne'
 
 function Sections() {
     return (
-        <div>
-
+        <div className="w-screen">
+            <SectionOne />
         </div>
     )
 }

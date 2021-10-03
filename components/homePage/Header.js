@@ -1,7 +1,11 @@
 import Image from "next/image";
 import Nav from "./Nav";
+import { useState } from "react"
+import NavDetail from "./NavDetail";
 
 function Header() {
+    // control nav detail
+    const [tab, setTab] = useState("");
     return (
         <header >
             <div className="bg-nativeCamp-header-bg h-header flex justify-center items-center">
@@ -48,7 +52,11 @@ function Header() {
             </div>
             {/* Nav */}
             <div>
-                <Nav />
+                <Nav setTab={setTab} />
+            </div>
+            {/* Nav detail */}
+            <div>
+                <NavDetail tab={tab} />
             </div>
         </header>
     );

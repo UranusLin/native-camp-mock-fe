@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import Image from "next/image";
 
-function NavTab({ image, imageHov, name }) {
+function NavTab({ image, imageHov, name, setTab }) {
     const [isHovering, setIsHovered] = useState(false);
-    const onMouseEnter = () => setIsHovered(true);
+    const onMouseEnter = () => {
+        setIsHovered(true)
+        setTab(name)
+    };
     const onMouseLeave = () => setIsHovered(false);
 
     return (
